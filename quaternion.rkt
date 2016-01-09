@@ -3,7 +3,7 @@
 #reader(lib "htdp-beginner-reader.ss" "lang")((modname quaternion) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #t)))
 ;; ******************************
 ;;
-;;    Noman Shahid (20613361)
+;;         Noman Shahid 
 ;;
 ;; ******************************
 
@@ -30,6 +30,7 @@
                       (* (quaternion-kc q1) (quaternion-cc q2)))))
 
 
-(check-expect (quat-mult -1 -1 (make-quaternion 2 3 0 0) (make-quaternion 5 6 0 0)) (make-quaternion -8 27 0 0))
+(check-expect (quat-mult -1 -1 (make-quaternion 2 3 0 0) (make-quaternion 5 6 0 0))
+              (make-quaternion -8 27 0 0))
 
 
